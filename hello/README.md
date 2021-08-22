@@ -22,6 +22,12 @@ fun main(args: Array<String>) {
 }
 ```
 
+`@SpringBootApplication`は以下のアノテーションを組み合わせたもの
+
+- `@Configuration`: アプリケーションコンテキストのbean定義のソース
+- `@EnableAutoConfiguration`: クラスパスに基づいて、beanを追加する
+- `@ComponentScan`: 他のcomponent, configurationやserviceを探す。
+
 実行は、 `gradlew :bootRun`
 
 ```
